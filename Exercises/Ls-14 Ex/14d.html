@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>overlay</title>
+    <style>
+      body{
+        height: 3000px;
+      }
+      .r-sb{
+        width: 300px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right:0px;
+        background-color: green;
+        color: white;
+      }
+
+      .overlay{
+        background-color: rgba(0,0,0,0.5);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .model{
+        background-color: white;
+        width: 300px;
+        border-radius: 5px;
+        padding-top: 15px;
+        padding-bottom:15px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .m-title{
+        font-family: arial;
+        font-size: 20px;
+        font-weight:bolder;
+        margin-bottom: 10px;
+      }
+
+      .para{
+        font-family: arial;
+        margin-bottom: 10px;
+      }
+
+      .close{
+        border: none;
+        background-color: grey;
+        color: white;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="r-sb">
+      right sidebar
+    </div>
+
+    <div class="overlay">
+      <div class="model">
+        <div class="m-title">
+          Model title
+        </div>
+      
+        <div class="para">
+          This is a modal
+        </div>
+      
+        <button class="close">
+          close
+        </button>
+      </div>
+    </div>
+
+  </body>
+</html>
